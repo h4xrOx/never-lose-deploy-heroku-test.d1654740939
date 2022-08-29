@@ -1,0 +1,138 @@
+;;
+;; Domain:     neverlose.cc.
+;; Exported:   2022-04-11 05:15:22
+;;
+;; This file is intended for use for informational and archival
+;; purposes ONLY and MUST be edited before use on a production
+;; DNS server.  In particular, you must:
+;;   -- update the SOA record with the correct authoritative name server
+;;   -- update the SOA record with the contact e-mail address information
+;;   -- update the NS record(s) with the authoritative name servers for this domain.
+;;
+;; For further information, please consult the BIND documentation
+;; located on the following website:
+;;
+;; http://www.isc.org/
+;;
+;; And RFC 1035:
+;;
+;; http://www.ietf.org/rfc/rfc1035.txt
+;;
+;; Please note that we do NOT offer technical support for any use
+;; of this zone data, the BIND name server, or any other third-party
+;; DNS software.
+;;
+;; Use at your own risk.
+;; SOA Record
+neverlose.cc    3600    IN    SOA    neverlose.cc root.neverlose.cc 2040132072 7200 3600 86400 3600
+
+;; A Records
+api2.neverlose.cc.    1    IN    A    185.178.208.142
+api.neverlose.cc.    1    IN    A    104.26.2.82
+api.neverlose.cc.    1    IN    A    104.26.3.82
+api.neverlose.cc.    1    IN    A    172.67.72.132
+cf.neverlose.cc.    1    IN    A    104.26.3.82
+cf.neverlose.cc.    1    IN    A    172.67.72.132
+cf.neverlose.cc.    1    IN    A    104.26.2.82
+docs.neverlose.cc.    1    IN    A    104.26.3.82
+docs.neverlose.cc.    1    IN    A    172.67.72.132
+docs.neverlose.cc.    1    IN    A    104.26.2.82
+email.neverlose.cc.    1    IN    A    172.67.72.132
+email.neverlose.cc.    1    IN    A    104.26.2.82
+email.neverlose.cc.    1    IN    A    104.26.3.82
+en.neverlose.cc.    1    IN    A    104.26.2.82
+en.neverlose.cc.    1    IN    A    172.67.72.132
+en.neverlose.cc.    1    IN    A    104.26.3.82
+forum.neverlose.cc.    1    IN    A    104.26.2.82
+forum.neverlose.cc.    1    IN    A    172.67.72.132
+forum.neverlose.cc.    1    IN    A    104.26.3.82
+mail.neverlose.cc.    1    IN    A    172.67.72.132
+mail.neverlose.cc.    1    IN    A    104.26.3.82
+mail.neverlose.cc.    1    IN    A    104.26.2.82
+market.neverlose.cc.    1    IN    A    104.26.2.82
+market.neverlose.cc.    1    IN    A    172.67.72.132
+market.neverlose.cc.    1    IN    A    104.26.3.82
+neverlose.cc.    1    IN    A    172.67.72.132
+neverlose.cc.    1    IN    A    104.26.3.82
+neverlose.cc.    1    IN    A    104.26.2.82
+www.neverlose.cc.    1    IN    A    172.67.72.132
+www.neverlose.cc.    1    IN    A    104.26.3.82
+www.neverlose.cc.    1    IN    A    104.26.2.82
+
+;; AAAA Records
+api.neverlose.cc.    1    IN    AAAA    2606:4700:20::ac43:4884
+api.neverlose.cc.    1    IN    AAAA    2606:4700:20::681a:352
+api.neverlose.cc.    1    IN    AAAA    2606:4700:20::681a:252
+mail.neverlose.cc.    1    IN    AAAA    2606:4700:20::681a:352
+mail.neverlose.cc.    1    IN    AAAA    2606:4700:20::ac43:4884
+mail.neverlose.cc.    1    IN    AAAA    2606:4700:20::681a:252
+neverlose.cc.    1    IN    AAAA    2606:4700:20::ac43:4884
+neverlose.cc.    1    IN    AAAA    2606:4700:20::681a:352
+neverlose.cc.    1    IN    AAAA    2606:4700:20::681a:252
+www.neverlose.cc.    1    IN    AAAA    2606:4700:20::681a:352
+www.neverlose.cc.    1    IN    AAAA    2606:4700:20::ac43:4884
+www.neverlose.cc.    1    IN    AAAA    2606:4700:20::681a:252
+
+;; CAA Records
+neverlose.cc.    1    IN    CAA    0 issuewild "pki.goog; cansignhttpexchanges=yes"
+neverlose.cc.    1    IN    CAA    0 issuewild "letsencrypt.org"
+neverlose.cc.    1    IN    CAA    0 issuewild "comodoca.com"
+neverlose.cc.    1    IN    CAA    0 issue "pki.goog; cansignhttpexchanges=yes"
+neverlose.cc.    1    IN    CAA    0 issue "letsencrypt.org"
+neverlose.cc.    1    IN    CAA    0 issue "comodoca.com"
+neverlose.cc.    1    IN    CAA    0 issuewild "digicert.com; cansignhttpexchanges=yes"
+neverlose.cc.    1    IN    CAA    0 issue "digicert.com; cansignhttpexchanges=yes"
+
+;; MX Records
+neverlose.cc.    1    IN    MX    1 mail.ez4.nl.
+
+;; TXT Records
+_dmarc.neverlose.cc.    1    IN    TXT    "v=DMARC1; p=none; aspf=r; sp=none"
+mail._domainkey.neverlose.cc.    1    IN    TXT    "v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC49Ds8PoJvuwTpxFKBTA2vmRggEF3CNX3yCt3eoBppm+IWblduljKNSv8rAXyX8hQ/fVXDTmuAErIuYwDWekKp7XgYmkJ/oojSF46J6xs0+KmT8f5HoL817c69G5SPZicU+Di/LvF+CcAYLV+vlKrAfhklO2owO7SlBnU74iTnfwIDAQAB"
+neverlose.cc.    1    IN    TXT    "ca3-41cde5fa8c7343bb902a82d249303900"
+neverlose.cc.    1    IN    TXT    "google-site-verification=62GOkRzbhu2BHz4q2nBqaAl9NmxLKghEA8fs46kiv7w"
+neverlose.cc.    1    IN    TXT    "anypay-verification: 50276f3b5013dba82406e1d7c9cb"
+neverlose.cc.    1    IN    TXT    "ca3-93fa6783a374467eaa23140041572638"
+neverlose.cc.    1    IN    TXT    "v=spf1 ip4:159.69.14.154 -all"
+
+1    88.99.187.145    
+static.145.187.99.88.clients.your-server.de
+rDNS
+2    88.99.187.145    
+neverlose.cc
+rDNS
+3    88.99.187.145    
+uma.ns.cloudflare.com.
+NS
+4    88.99.187.145    
+jeremy.ns.cloudflare.com.
+NS
+5    88.99.187.145    
+mail.ez4.nl.
+MX (1)
+6    88.99.187.145    
+anypay-verification: 50276f3b5013dba82406e1d7c9cb
+TXT
+7    88.99.187.145    
+ca3-93fa6783a374467eaa23140041572638
+TXT
+8    88.99.187.145    
+v=spf1 ip4:159.69.14.154 -all
+TXT
+9    88.99.187.145    
+ca3-41cde5fa8c7343bb902a82d249303900
+TXT
+10    88.99.187.145    
+google-site-verification=62GOkRzbhu2BHz4q2nBqaAl9NmxLKghEA8fs46kiv7w
+TXT
+11    88.99.187.145    
+static.145.187.99.88.clients.your-server.de
+domainnames
+12    88.99.187.145    
+uli1.favanaco.com
+domainnames
+13    88.99.187.145    
+neverlose.cc
+domainnames
+
+
